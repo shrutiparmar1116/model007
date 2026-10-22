@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff7fb">
+<title>Shruti Parmar | Creative Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:#fffafd;color:#35283c;line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:19px 8%;position:sticky;top:0;z-index:5;
+  background:#fffafdF2;border-bottom:1px solid #f4e5f0;
+  backdrop-filter:blur(12px);
+}
+.logo{font-size:24px;font-weight:800;letter-spacing:-1px}
+.logo span{color:#d66aa4}
+.links{display:flex;gap:24px;font-size:14px;color:#786779}
+.links a:hover{color:#d66aa4}
+.hero{
+  min-height:78vh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;text-align:center;
+  padding:90px 22px;
+  background:
+    radial-gradient(ellipse at 15% 20%,#ffe0ef 0%,transparent 40%),
+    radial-gradient(ellipse at 85% 75%,#e9e1ff 0%,transparent 42%),
+    #fffafd;
+}
+.pill{
+  background:white;border:1px solid #f0d6e7;border-radius:40px;
+  padding:7px 17px;font-size:12px;letter-spacing:1.5px;
+  color:#bd5790;margin-bottom:24px;
+}
+h1{font-size:clamp(42px,8vw,76px);line-height:1.13;letter-spacing:-2px}
+.accent{
+  background:linear-gradient(90deg,#d65e9b,#8f77dc);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p{max-width:590px;color:#796b7d;margin:24px 0 30px;font-size:17px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap;justify-content:center}
+.btn{
+  display:inline-block;padding:12px 23px;border-radius:40px;
+  background:linear-gradient(100deg,#d96da7,#a18be8);
+  color:white;font-weight:650;border:1px solid transparent;
+  transition:.25s;cursor:pointer;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px #dca2c64d}
+.btn.alt{background:white;color:#9e5b8b;border-color:#efd8e7}
+section{padding:75px 8%;scroll-margin-top:70px}
+.title{text-align:center;font-size:34px;letter-spacing:-.8px}
+.subtitle{text-align:center;color:#918194;margin:10px auto 38px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{
+  background:white;padding:27px;border-radius:22px;
+  border:1px solid #f1e5ee;
+  box-shadow:0 10px 30px #4b254208;transition:.25s;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 15px 30px #dca2c630}
+.emoji{
+  width:53px;height:53px;display:grid;place-items:center;
+  background:#fff0f7;border-radius:17px;font-size:25px;margin-bottom:16px;
+}
+.card:nth-child(2) .emoji{background:#f0ebff}
+.card:nth-child(3) .emoji{background:#fff4e9}
+.card h3{font-size:19px;margin-bottom:9px}
+.card p{color:#87788a;font-size:14px}
+.about{background:linear-gradient(135deg,#fff0f7,#f3efff)}
+.about-inner{max-width:760px;margin:auto;text-align:center}
+.about-inner p{color:#796b7d;margin:18px 0}
+.skills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.skill{
+  background:#fff;border:1px solid #eaddf0;border-radius:30px;
+  padding:7px 14px;font-size:13px;color:#886b99;
+}
+.contact{text-align:center}
+.contact-box{
+  max-width:680px;margin:auto;padding:40px 22px;
+  background:linear-gradient(130deg,#fff0f7,#f0ecff);
+  border:1px solid #f1dfef;border-radius:28px;
+}
+.contact-box p{color:#817287;margin:15px 0 24px}
+footer{text-align:center;padding:25px;color:#a08da0;border-top:1px solid #f1e5ee;font-size:13px}
+@media(max-width:700px){
+  nav{padding:15px 5%}
+  .links{gap:11px;font-size:12px}
+  .logo{font-size:21px}
+  section{padding:55px 6%}
+  .grid{grid-template-columns:1fr}
+  h1{letter-spacing:-1px}
+}
+@media(max-width:380px){.links{gap:7px;font-size:11px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#home">shruti<span>.</span></a>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#work">My Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="pill">✿ A LITTLE SPACE OF CREATIVITY</div>
+  <h1>Hello, I'm<br><span class="accent">Shruti Parmar.</span></h1>
+  <p>
+    Welcome to my little corner of the internet — a place for
+    creative ideas, beautiful designs and new possibilities.
+    Every great idea starts with a little imagination.
+  </p>
+  <div class="buttons">
+    <a class="btn" href="#work">Explore My World ↗</a>
+    <a class="btn alt" href="#about">A Little About Me</a>
+  </div>
+</header>
+
+<section id="work">
+  <h2 class="title">Things I <span class="accent">Love</span></h2>
+  <p class="subtitle">A few creative interests that inspire me every day.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="emoji">🎨</div>
+      <h3>Creative Design</h3>
+      <p>Exploring colours, layouts and fresh ideas to create lovely visual experiences.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">💻</div>
+      <h3>Digital Creations</h3>
+      <p>Discovering website design and learning how ideas can become interactive experiences.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🌷</div>
+      <h3>Personal Growth</h3>
+      <p>Learning something new, finding inspiration and making progress one day at a time.</p>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-inner">
+    <h2 class="title">A Little About <span class="accent">Me</span></h2>
+    <p>
+      I'm Shruti Parmar. I enjoy discovering new ideas, expressing
+      creativity and learning things that help me grow.
+      This website is my own little digital space to share my interests
+      and celebrate the journey of creating something new.
+    </p>
+    <div class="skills">
+      <span class="skill">Creativity ✨</span>
+      <span class="skill">Design 🎨</span>
+      <span class="skill">Learning 🌱</span>
+      <span class="skill">Technology 💻</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-box">
+    <h2 class="title">Say <span class="accent">Hello!</span></h2>
+    <p>Have an idea to share? I'd love to hear from you.</p>
+    <a class="btn" href="mailto:Shrutiparmar1116@gmail.com">
+      ✉ Get in Touch
+    </a>
+  </div>
+</section>
+
+<footer>
+  Made with ♡ by Shruti Parmar · © <span id="year"></span>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
